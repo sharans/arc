@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/twlabs/personal-assistant/arc/logger"
+	"github.com/sharans/arc/logger"
 )
 
 func Authenticate(next http.Handler) http.Handler {

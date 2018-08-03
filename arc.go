@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/twlabs/personal-assistant/arc/logger"
+	"github.com/sharans/arc/logger"
 )
 
 const DEFAULT_PORT = "8090"
