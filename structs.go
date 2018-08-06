@@ -36,6 +36,22 @@ type Sender struct {
 	WorkingOffice  string `json:"workingOffice"`
 	Grade          string `json:"grade"`
 	Role           string `json:"role"`
+	Assignment        EmpAssignment `json:"assignment"`
+}
+
+type HavingName struct {
+	Name string `json:"name"`
+}
+
+type EmpAssignment struct {
+	AccountName HavingName `json:"account"`
+	Project EmpProject `json:"project"`
+}
+
+type EmpProject struct {
+	Id string `json:"id"`
+	Name string `json:"name"`
+
 }
 
 type ActionResponse interface {
